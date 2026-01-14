@@ -1,5 +1,6 @@
 # QtBLE-128Channel
 > A 128-channel BLE signal processing system developed with Qt + SimpleBLE driver, supporting spike detection, AP detection, visual display, threshold configuration, impedance testing, log recording, filter configuration, data playback and other functions.
+<img width="1657" height="1019" alt="8ce5a0f96907e478a064346179d1a54c" src="https://github.com/user-attachments/assets/e224946d-f768-4668-a45f-705472a3fc45" />
 
 ## 🚀 Features
 - ✅ Real-time acquisition of 128-channel BLE signals (based on SimpleBLE driver)

@@ -1,0 +1,21 @@
+set architecture "iCE40UP"
+set device "iCE40UP5K"
+set package "UWG30"
+set speed "High-Performance_1.2V"
+set WRAPPER_INST "lscc_add_sub_inst"
+set D_WIDTH 48
+set SIGNED "off"
+set USE_CNUM 0
+set USE_CIN 0
+set USE_COUT 0
+set USE_OREG 0
+set PIPELINES 4
+set FAMILY "iCE40UP"
+
+
+#if {($FAMILY == "iCE40UP")} {
+#    create_clock -name {clk_i} -period 40 [get_ports clk_i]
+#} 
+#if {($FAMILY == "LIFCL")} {
+#    create_clock -name {clk_i} -period 10 [get_ports clk_i]
+#} 

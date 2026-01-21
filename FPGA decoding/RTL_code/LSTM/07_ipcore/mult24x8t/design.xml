@@ -1,0 +1,96 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>mult24x8t</ipxact:name>
+    <ipxact:version>2.0.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_multiplier_inst</ipxact:instanceName>
+            <ipxact:componentRef library="module" name="multiplier" vendor="latticesemi.com" version="2.0.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="USE_COEFF">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="COEFF">2</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="A_WIDTH">24</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="B_WIDTH">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="A_SIGNED">on</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="B_SIGNED">on</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="USE_IREG">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="USE_OREG">False</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="PIPELINES">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="IMPL">DSP</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="A_WDT">24</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="B_WDT">8</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="M_WDT">32</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="O_CLOCKS">3</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="clk_i"/>
+                <ipxact:externalPortReference portRef="clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.clk_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="clk_en_i"/>
+                <ipxact:externalPortReference portRef="clk_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="rst_i"/>
+                <ipxact:externalPortReference portRef="rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.data_a_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="data_a_i"/>
+                <ipxact:externalPortReference portRef="data_a_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>23</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.data_b_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="data_b_i"/>
+                <ipxact:externalPortReference portRef="data_b_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>7</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>mult24x8t.result_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="mult24x8t" portRef="result_o"/>
+                <ipxact:externalPortReference portRef="result_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>31</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

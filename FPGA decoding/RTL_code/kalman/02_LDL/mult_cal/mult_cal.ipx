@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LAV-AT" date="2025 09 03 14:27:21" device="LAV-AT-500E" gen_platform="Radiant" generator="ipgen" library="module" module="multiplier" name="mult_cal" package="LFG676" source_format="Verilog" speed="1" vendor="latticesemi.com" version="2.0.0">
+ <Package>
+  <File modified="2025 09 03 14:27:21" name="rtl/mult_cal_bb.v" type="black_box_verilog"/>
+  <File modified="2025 09 03 14:27:21" name="mult_cal.cfg" type="cfg"/>
+  <File modified="2025 09 03 14:27:21" name="misc/mult_cal_tmpl.v" type="template_verilog"/>
+  <File modified="2025 09 03 14:27:21" name="misc/mult_cal_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2025 09 03 14:27:21" name="rtl/mult_cal.v" type="top_level_verilog"/>
+  <File modified="2025 09 03 14:27:21" name="constraints/mult_cal.ldc" type="timing_constraints"/>
+  <File modified="2025 09 03 14:27:21" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2025 09 03 14:27:21" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2025 09 03 14:27:21" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2025 09 03 14:27:21" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 06 01 00:50:39" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

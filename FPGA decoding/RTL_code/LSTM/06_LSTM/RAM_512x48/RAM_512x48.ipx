@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2024 01 04 11:47:33" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="distributed_dpram" name="RAM_512x48" package="CSFBGA121" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.4.0">
+ <Package>
+  <File modified="2024 01 04 11:47:33" name="rtl/RAM_512x48_bb.v" type="black_box_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="RAM_512x48.cfg" type="cfg"/>
+  <File modified="2024 01 04 11:47:33" name="misc/RAM_512x48_tmpl.v" type="template_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="misc/RAM_512x48_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 01 04 11:47:33" name="rtl/RAM_512x48.v" type="top_level_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="constraints/RAM_512x48.ldc" type="timing_constraints"/>
+  <File modified="2024 01 04 11:47:33" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 01 04 11:47:33" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 01 04 11:47:33" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 01 04 11:47:33" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 09 01 23:56:33" name="testbench/clk_rst_gen.v" type="testbench_verilog"/>
+  <File modified="2022 09 08 03:46:41" name="testbench/dist_mem_master.v" type="testbench_verilog"/>
+  <File modified="2021 06 30 09:52:26" name="testbench/dist_mem_model.v" type="testbench_verilog"/>
+  <File modified="2022 09 01 23:56:33" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

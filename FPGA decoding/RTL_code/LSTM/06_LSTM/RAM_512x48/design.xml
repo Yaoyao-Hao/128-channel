@@ -1,0 +1,139 @@
+<?xml version="1.0" ?>
+<ipxact:design xmlns:ipxact="http://www.accellera.org/XMLSchema/IPXACT/1685-2014" xmlns:lattice="http://www.latticesemi.com/lattice" xmlns:lsccip="http://www.latticesemi.com/XMLSchema/Radiant/ip">
+    <ipxact:vendor>latticesemi.com</ipxact:vendor>
+    <ipxact:library>module</ipxact:library>
+    <ipxact:name>RAM_512x48</ipxact:name>
+    <ipxact:version>1.4.0</ipxact:version>
+    <ipxact:componentInstances>
+        <ipxact:componentInstance>
+            <ipxact:instanceName>lscc_distributed_dpram_inst</ipxact:instanceName>
+            <ipxact:componentRef library="module" name="distributed_dpram" vendor="latticesemi.com" version="1.4.0">
+                <ipxact:configurableElementValues>
+                    <ipxact:configurableElementValue referenceId="FAMILY">LIFCL</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="T_FAMILY">LIFCL</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WADDR_DEPTH">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WDATA_WIDTH">48</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RADDR_DEPTH">512</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RDATA_WIDTH">48</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="Total Memory bits">24576</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="WADDR_WIDTH">9</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="REGMODE">True</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RADDR_WIDTH">9</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="RESETMODE">sync</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="user_init_mode">all_zero</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_MODE">mem_file</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="user_init_file">none</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_FILE">D:/YCB/YCB/PROJECT/LSTM/1_2LSTM_latticeproject/07_hyram/01_rtl/06_LSTM/RAM_512x48/ram_dp_mem_init_all_zero_512x48.mem</ipxact:configurableElementValue>
+                    <ipxact:configurableElementValue referenceId="INIT_FILE_FORMAT">hex</ipxact:configurableElementValue>
+                </ipxact:configurableElementValues>
+            </ipxact:componentRef>
+        </ipxact:componentInstance>
+    </ipxact:componentInstances>
+    <ipxact:adHocConnections>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.wr_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="wr_clk_i"/>
+                <ipxact:externalPortReference portRef="wr_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rd_clk_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rd_clk_i"/>
+                <ipxact:externalPortReference portRef="rd_clk_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rst_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rst_i"/>
+                <ipxact:externalPortReference portRef="rst_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.wr_clk_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="wr_clk_en_i"/>
+                <ipxact:externalPortReference portRef="wr_clk_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rd_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rd_en_i"/>
+                <ipxact:externalPortReference portRef="rd_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rd_clk_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rd_clk_en_i"/>
+                <ipxact:externalPortReference portRef="rd_clk_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.wr_en_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="wr_en_i"/>
+                <ipxact:externalPortReference portRef="wr_en_i"/>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.wr_data_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="wr_data_i"/>
+                <ipxact:externalPortReference portRef="wr_data_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>47</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.wr_addr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="wr_addr_i"/>
+                <ipxact:externalPortReference portRef="wr_addr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>8</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rd_addr_i</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rd_addr_i"/>
+                <ipxact:externalPortReference portRef="rd_addr_i">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>8</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+        <ipxact:adHocConnection>
+            <ipxact:name>RAM_512x48.rd_data_o</ipxact:name>
+            <ipxact:portReferences>
+                <ipxact:internalPortReference componentRef="RAM_512x48" portRef="rd_data_o"/>
+                <ipxact:externalPortReference portRef="rd_data_o">
+                    <ipxact:partSelect>
+                        <ipxact:range>
+                            <ipxact:left>47</ipxact:left>
+                            <ipxact:right>0</ipxact:right>
+                        </ipxact:range>
+                    </ipxact:partSelect>
+                </ipxact:externalPortReference>
+            </ipxact:portReferences>
+        </ipxact:adHocConnection>
+    </ipxact:adHocConnections>
+</ipxact:design>

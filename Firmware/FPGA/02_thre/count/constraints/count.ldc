@@ -1,0 +1,19 @@
+set architecture "iCE40UP"
+set device "iCE40UP5K"
+set package "UWG30"
+set speed "High-Performance_1.2V"
+set WRAPPER_INST "lscc_cntr_inst"
+set CNTR_WIDTH 8
+set CNTR_DIR 1
+set CNTR_LVALUE 0
+set CNTR_HVALUE 255
+set CNTR_LOAD 0
+set FAMILY "iCE40UP"
+
+
+#if {($FAMILY == "iCE40UP")} {
+#    create_clock -name {clk_i} -period 40 [get_ports clk_i]
+#} 
+#if {($FAMILY == "LIFCL")} {
+#    create_clock -name {clk_i} -period 10 [get_ports clk_i]
+#} 

@@ -1,0 +1,13 @@
+    pll_2xq_5x u_pll_2xq_5x(.clki_i(clki_i),
+        .rstn_i(rstn_i),
+        .phasedir_i(phasedir_i),
+        .phasestep_i(phasestep_i),
+        .phaseloadreg_i(phaseloadreg_i),
+        .phasesel_i(phasesel_i),
+        .clkop_o(clkop_o),
+        .clkos_o(clkos_o),
+        .clkos2_o(clkos2_o),
+        .clkos3_o(clkos3_o),
+        .clkos4_o(clkos4_o),
+        .clkos5_o(clkos5_o),
+        .lock_o(lock_o));

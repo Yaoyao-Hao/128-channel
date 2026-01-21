@@ -1,0 +1,24 @@
+set architecture "LAV-AT"
+set device "LAV-AT-500E"
+set package "LFG676"
+set speed "1"
+set WRAPPER_INST "lscc_multiplier_inst"
+set USE_COEFF 0
+set COEFF 2
+set A_WIDTH 64
+set B_WIDTH 64
+set A_SIGNED "on"
+set B_SIGNED "on"
+set USE_IREG "off"
+set USE_OREG "off"
+set PIPELINES 1
+set IMPL "DSP"
+set FAMILY "LAV-AT"
+
+
+#if {($FAMILY == "iCE40UP")} {
+#    create_clock -name {clk_i} -period 40 [get_ports clk_i]
+#} 
+#if {($FAMILY == "LIFCL")} {
+#    create_clock -name {clk_i} -period 10 [get_ports clk_i]
+#} 

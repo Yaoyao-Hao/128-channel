@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2023 12 29 14:15:49" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="osc" name="osc_v1" package="CSFBGA121" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="1.4.0">
+ <Package>
+  <File modified="2023 12 29 14:15:49" name="rtl/osc_v1_bb.v" type="black_box_verilog"/>
+  <File modified="2023 12 29 14:15:49" name="osc_v1.cfg" type="cfg"/>
+  <File modified="2023 12 29 14:15:49" name="misc/osc_v1_tmpl.v" type="template_verilog"/>
+  <File modified="2023 12 29 14:15:49" name="misc/osc_v1_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2023 12 29 14:15:49" name="rtl/osc_v1.v" type="top_level_verilog"/>
+  <File modified="2023 12 29 14:15:49" name="constraints/osc_v1.ldc" type="timing_constraints"/>
+  <File modified="2023 12 29 14:15:49" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2023 12 29 14:15:49" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2023 12 29 14:15:49" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2023 12 29 14:15:49" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 07 13 02:43:21" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

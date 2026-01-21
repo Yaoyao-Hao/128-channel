@@ -1,0 +1,23 @@
+set architecture "LIFCL"
+set device "LIFCL-40"
+set package "CSFBGA121"
+set speed "7_High-Performance_1.0V"
+set WRAPPER_INST "lscc_distributed_dpram_inst"
+set FAMILY "LIFCL"
+set WADDR_DEPTH 512
+set WDATA_WIDTH 48
+set RADDR_DEPTH 512
+set RDATA_WIDTH 48
+set WADDR_WIDTH 9
+set REGMODE "reg"
+set RADDR_WIDTH 9
+set RESETMODE "sync"
+set INIT_MODE "mem_file"
+set INIT_FILE "D:/YCB/YCB/PROJECT/LSTM/1_2LSTM_latticeproject/07_hyram/01_rtl/06_LSTM/RAM_512x48/ram_dp_mem_init_all_zero_512x48.mem"
+set INIT_FILE_FORMAT "hex"
+
+
+#create_clock -name wr_clk_i -period 10 [get_ports wr_clk_i] 
+#create_clock -name rd_clk_i -period 10 [get_ports rd_clk_i]
+#set_clock_groups -logically_exclusive -group [get_clocks wr_clk_i] -group [get_clocks rd_clk_i]
+#set_false_path -from [get_ports rst_i]

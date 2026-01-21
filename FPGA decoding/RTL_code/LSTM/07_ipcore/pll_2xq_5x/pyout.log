@@ -1,0 +1,110 @@
+[INFO] Using Python version : 3.7.4 (default, Nov 21 2019, 13:51:44) [MSC v.1923 64 bit (AMD64)]
+[DEBUG] bypass_bw_factor =  0
+[DEBUG] Total process time :  0.24399060000000006
+[INFO] Done Parameter Optimization.
+Best Param : {'M_DIV': 1, 'N_DIV': 2, 'O_DIV': {'CLKOP': 16, 'CLKOS': 16, 'CLKOS2': 32, 'CLKOS3': 16, 'CLKOS4': 16, 'CLKOS5': 16}, 'BWFAC': 8.297934537187738, 'fbk_div': 32, 'm_div': 1, 'ipp_ctrl': 6, 'bw_ctrl_bias': 15, 'ipp_sel': 15, 'ipi_cmp': 12, 'cset': 8, 'v2i_pp_res': 9.0, 'cripple': 1, 'PEAK': 0.14594036696650378, 'BW_3DB': 6.025595860743626, 'BW_OPL': 4.3651583224017, 'PM_3DB': 75.86678721493638}
+
+ Analog Parameters : 
+ - CSET        	: 8P		 - CRIPPLE     	: 1P		 - IPI_CMP     	: 0b1100
+ - V2I_PP_RES  	: 9K		 - IPP_SEL     	: 0b1111		 -             	    
+ - IPP_CTRL    	: 0b0110		 - BW_CTL_BIAS   : 0b1111		 -             	    
+
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\rtl\pll_2xq_5x_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\pll_2xq_5x.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\misc\pll_2xq_5x_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\misc\pll_2xq_5x_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\rtl\pll_2xq_5x.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\constraints\pll_2xq_5x.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\pll_2xq_5x\pll_2xq_5x.ipx 
+ERROR: ERROR  --  (Depth_W x Width_W) and (Depth_R x Width_R) must be equivalent!
+ERROR: ERROR  --  (Depth_W x Width_W) and (Depth_R x Width_R) must be equivalent!
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\rtl\test_fifo_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\test_fifo.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\misc\test_fifo_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\misc\test_fifo_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\rtl\test_fifo.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\constraints\test_fifo.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\eval\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\eval\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\test_fifo\test_fifo.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\rtl\bias_ram0_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\bias_ram0.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\misc\bias_ram0_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\misc\bias_ram0_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\rtl\bias_ram0.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\constraints\bias_ram0.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\bias_ram0.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\rtl\bias_ram1_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\bias_ram1.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\misc\bias_ram1_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\misc\bias_ram1_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\rtl\bias_ram1.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\constraints\bias_ram1.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\bias_ram1.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\rtl\bias_ram2_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\bias_ram2.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\misc\bias_ram2_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\misc\bias_ram2_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\rtl\bias_ram2.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\constraints\bias_ram2.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram2\bias_ram2.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\rtl\bias_ram3_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\bias_ram3.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\misc\bias_ram3_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\misc\bias_ram3_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\rtl\bias_ram3.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\constraints\bias_ram3.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram3\bias_ram3.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\rtl\bias_ram0_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\bias_ram0.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\misc\bias_ram0_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\misc\bias_ram0_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\rtl\bias_ram0.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\constraints\bias_ram0.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\component.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram0\bias_ram0.ipx 
+WARNING: missing driver HDL files.
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\rtl\bias_ram1_bb.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\bias_ram1.cfg 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\misc\bias_ram1_tmpl.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\misc\bias_ram1_tmpl.vhd 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\rtl\bias_ram1.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\constraints\bias_ram1.ldc 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\testbench\dut_params.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\testbench\dut_inst.v 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\design.xml 
+Writing D:\YCB\12_6\07_hyram\02_prj\HyRam_Demo\bias_ram1\component.xml 

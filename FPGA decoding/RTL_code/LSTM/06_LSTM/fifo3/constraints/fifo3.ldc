@@ -1,0 +1,33 @@
+set architecture "LIFCL"
+set device "LIFCL-40"
+set package "CSFBGA121"
+set speed "7_High-Performance_1.0V"
+set WRAPPER_INST "lscc_fifo_inst"
+set FAMILY "LIFCL"
+set ADDRESS_DEPTH 128
+set DATA_WIDTH 24
+set FIFO_CONTROLLER "FABRIC"
+set FORCE_FAST_CONTROLLER 0
+set IMPLEMENTATION "EBR"
+set ADDRESS_WIDTH 7
+set REGMODE "reg"
+set RESET_MODE "async"
+set ENABLE_ALMOST_FULL_FLAG "TRUE"
+set ALMOST_FULL_ASSERTION "static-single"
+set ALMOST_FULL_ASSERT_LVL 96
+set ALMOST_FULL_DEASSERT_LVL 95
+set ENABLE_ALMOST_EMPTY_FLAG "FALSE"
+set ALMOST_EMPTY_ASSERTION "static-dual"
+set ALMOST_EMPTY_ASSERT_LVL 1
+set ALMOST_EMPTY_DEASSERT_LVL 2
+set ENABLE_DATA_COUNT "FALSE"
+
+
+
+#if {$FAMILY == "iCE40UP"} {
+#    create_clock -name clk_i -period 40 [get_ports clk_i] 
+#    set_false_path -from [get_ports rst_i]
+#} else {
+#    create_clock -name clk_i -period 10 [get_ports clk_i] 
+#    set_false_path -from [get_ports rst_i]
+#}

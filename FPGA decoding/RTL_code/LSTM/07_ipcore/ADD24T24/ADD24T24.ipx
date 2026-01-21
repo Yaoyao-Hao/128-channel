@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="LIFCL" date="2024 01 04 11:47:33" device="LIFCL-40" gen_platform="Radiant" generator="ipgen" library="module" module="adder" name="ADD24T24" package="CSFBGA121" source_format="Verilog" speed="7_High-Performance_1.0V" vendor="latticesemi.com" version="2.0.0">
+ <Package>
+  <File modified="2024 01 04 11:47:33" name="rtl/ADD24T24_bb.v" type="black_box_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="ADD24T24.cfg" type="cfg"/>
+  <File modified="2024 01 04 11:47:33" name="misc/ADD24T24_tmpl.v" type="template_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="misc/ADD24T24_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2024 01 04 11:47:33" name="rtl/ADD24T24.v" type="top_level_verilog"/>
+  <File modified="2024 01 04 11:47:33" name="constraints/ADD24T24.ldc" type="timing_constraints"/>
+  <File modified="2024 01 04 11:47:33" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2024 01 04 11:47:33" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2024 01 04 11:47:33" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2024 01 04 11:47:33" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2021 06 01 00:38:59" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

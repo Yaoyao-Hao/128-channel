@@ -1,78 +1,128 @@
 # Project Introduction
-This project is aimed at implementing 128-channel neural signal acquisition on FPGA.
-
-It includes FPGA implementations of Wiener, LSTM, and Kalman trajectory decoding algorithms.
+This project is aimed at implementing 128-channel neural decoding algorithms on FPGA, including Wiener Filter, LSTM, and Kalman Filter.
  
 # Environment-dependent
- Lattice Radiant
- python 3.11
+ 	Lattice Radiant
+	python 3.11
 
 # Directory Structure Description
-    ©À©¤©¤ ReadMe.md           // help
+    |â€”â€” ReadMe.md          // help
     
-    ©À©¤©¤ ESA_data           // Handwritten Chinese Character Dataset
+    |â€”â€” ESA_data           // Neural data for testing from Xu et al., Adv. Sci., 2025
     
-    ©À©¤©¤ python             // python Decoding Algorithm
+        Dataset Overview
         
-    ©¦   ©À©¤©¤ kalman     // kalman train&test£¬Parameter File Generation
-    
-    ©¦   ©À©¤©¤ LSTM       // LSTM train&test£¬Parameter File Generation
-    
-    ©¦   ©À©¤©¤ Wiener     // Wiener train&test£¬Parameter File Generation
-
-    ©À©¤©¤ RTL_code             // FPGA code
+        The data are stored in MATLAB 5.0 format and loaded as a dictionary , with the following main fields:
         
-    ©¦   ©À©¤©¤ kalman     // kalman RTL code&IP
-
-    ©¦       ©À©¤©¤ 01_Kalman    // kalman cal top&Matrix mult
-
-    ©¦       ©À©¤©¤ 02_LDL       // LDL Inv Module
+        Core Data Fields
+    |   |â€”â€” bined_spk â€” Neural Feature Matrix
+        
+            Shape: (96, 12600)
+        
+            Description: Binned spike features from 96 neural channels across 12,600 time windows.
+        
+            This serves as the main input feature matrix X.
+        
+    |   |â€”â€” trial_velocity â€” Target Output (Velocity Trajectories)
+        
+            Shape: (2, 12600)
+        
+            Description: Two-dimensional velocity signals (e.g., x- and y-direction hand movement velocities).
+        
+            This is the supervised target Y.
+        
+    |   |â€”â€” trial_mask â€” Valid Sample Mask
+        
+            Shape: (1, 12600)
+        
+            Description: Indicates whether each time point belongs to a valid trial segment (1 = valid, 0 = invalid/inter-trial interval).
+        
+            Used to filter out non-trial data during training and evaluation.
+        
+    |   |â€”â€” trial_breakNum â€” Trial Lengths
+        
+            Shape: (1, 90)
+        
+            Description: Number of time steps in each of the 90 trials.
+        
+            Used to segment continuous data into individual trials.
+        
+    |   |â€”â€” trial_target â€” Trial Target Indices
+        
+            Shape: (90, 1)
+        
+            Description: Target class index for each trial (e.g., 1â€“30).
+        
+    |   |â€”â€” target_hanzi â€” Target Character Labels
+        
+            Shape: (1, 30)
+        
+            Description: Chinese character labels corresponding to each target class, indicating this is a brainâ€“computer interface handwriting task.
+        
+    |   |â€”â€” break_ind â€” Trial Boundary Indicators
+        
+            Shape: (1, 12600)
+        
+            Description: Marks inter-trial boundaries for segmenting the data.
     
-    ©¦       ©À©¤©¤ 03_TB        // Test bench
+    |â€”â€” python             // python Decoding Algorithm
+        
+    |   |â€”â€” kalman     // kalman train&test&Parameter File Generation
     
-    ©¦       ©À©¤©¤ 04_Initfile  // INIT para file    
+    |   |â€”â€” LSTM       // LSTM train&test&Parameter File Generation
     
-    ©¦   ©À©¤©¤ LSTM       // LSTM RTL code&IP
+    |   |â€”â€” Wiener     // Wiener train&test&Parameter File Generation
+
+    |â€”â€” RTL_code             // FPGA code
+        
+    |   |â€”â€” kalman     // kalman RTL code&IP
+
+    |       |â€”â€” 01_Kalman    // kalman cal top&Matrix mult
+
+    |       |â€”â€” 02_LDL       // LDL Inv Module
     
-    ©¦       ©À©¤©¤ 01_dypll     // clock gen 
-
-    ©¦       ©À©¤©¤ 02_top       // TOP
-
-    ©¦       ©À©¤©¤ 03_hyRam     // hyram phy    
-
-    ©¦       ©À©¤©¤ 04_constr    // IO
-
-    ©¦       ©À©¤©¤ 05_UART      // UART phy&Agreement
-
-    ©¦       ©À©¤©¤ 06_LSTM      // LSTM cal 
-
-    ©¦       ©À©¤©¤ 07_ipcore    // IP CORE
-
-    ©¦       ©À©¤©¤ 08_TB        // Test bench
+    |       |â€”â€” 03_TB        // Test bench
     
-    ©¦       ©À©¤©¤ 09_Initfile  // INIT para file    
+    |       |â€”â€” 04_Initfile  // INIT para file    
     
-    ©¦   ©À©¤©¤ Wiener     // Wiener RTL code&IP
+    |   |â€”â€” LSTM       // LSTM RTL code&IP
+    
+    |       |â€”â€” 01_dypll     // clock gen 
 
-    ©¦       ©À©¤©¤ 01_RHD        // RHD phy
+    |       |â€”â€” 02_top       // TOP
 
-    ©¦       ©À©¤©¤ 02_thre       // thre rec&RMS cal
+    |       |â€”â€” 03_hyRam     // hyram phy    
 
-    ©¦       ©À©¤©¤ 03_Wiener     // Wiener cal    
+    |       |â€”â€” 04_constr    // IO
 
-    ©¦       ©À©¤©¤ 04_Spikecal   // spike cal
+    |       |â€”â€” 05_UART      // UART phy&Agreement
 
-    ©¦       ©À©¤©¤ 05_MCU        // MCU <-----> FPGA Communication 
+    |       |â€”â€” 06_LSTM      // LSTM cal 
 
-    ©¦       ©À©¤©¤ 06_TB         // Test bench
+    |       |â€”â€” 07_ipcore    // IP CORE
+
+    |       |â€”â€” 08_TB        // Test bench
+    
+    |       |â€”â€” 09_Initfile  // INIT para file    
+    
+    |   |â€”â€” Wiener     // Wiener RTL code&IP
+
+    |       |â€”â€” 01_Wiener     // Wiener filter
+
+    |       |â€”â€” 02_TB         // Test bench
+
+    |       |â€”â€” 03_init_file  // init file 
+
+    |           |â€”â€” W_q.hex   // Wiener parameter 
+
+    |           |â€”â€” X_q.txt   // testfile 
 
  
 # Version
 ###### v1.0.0: 
     1. 128-channel neural signal acquisition
-    2. spike cal
-    3. Wiener&LSTM&Kalman cal
-    4. channel RMS cal
+    2. spike detection
+    3. Wiener&LSTM&Kalman decoding modules
     
 
  

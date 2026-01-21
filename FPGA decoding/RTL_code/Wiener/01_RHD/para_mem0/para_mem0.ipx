@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<RadiantModule architecture="iCE40UP" date="2025 10 13 16:50:20" device="iCE40UP5K" gen_platform="Radiant" generator="ipgen" library="module" module="ram_dq" name="para_mem0" package="UWG30" source_format="Verilog" speed="High-Performance_1.2V" vendor="latticesemi.com" version="2.2.0">
+ <Package>
+  <File modified="2025 10 13 16:50:20" name="rtl/para_mem0_bb.v" type="black_box_verilog"/>
+  <File modified="2025 10 13 16:50:20" name="para_mem0.cfg" type="cfg"/>
+  <File modified="2025 10 13 16:50:20" name="misc/para_mem0_tmpl.v" type="template_verilog"/>
+  <File modified="2025 10 13 16:50:20" name="misc/para_mem0_tmpl.vhd" type="template_vhdl"/>
+  <File modified="2025 10 13 16:50:20" name="rtl/para_mem0.v" type="top_level_verilog"/>
+  <File modified="2025 10 13 16:50:20" name="constraints/para_mem0.ldc" type="timing_constraints"/>
+  <File modified="2025 10 13 16:50:20" name="testbench/dut_params.v" type="dependency_file"/>
+  <File modified="2025 10 13 16:50:20" name="testbench/dut_inst.v" type="dependency_file"/>
+  <File modified="2025 10 13 16:50:20" name="component.xml" type="IP-XACT_component"/>
+  <File modified="2025 10 13 16:50:20" name="design.xml" type="IP-XACT_design"/>
+  <File modified="2022 07 27 09:33:24" name="testbench/tb_top.v" type="testbench_verilog"/>
+ </Package>
+</RadiantModule>

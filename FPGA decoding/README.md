@@ -1,20 +1,16 @@
 # Project Introduction
-This project is aimed at implementing 128-channel neural signal acquisition on FPGA.
-
-It includes FPGA implementations of Wiener, LSTM, and Kalman trajectory decoding algorithms.
+This project is aimed at implementing 128-channel neural decoding algorithms on FPGA, including Wiener Filter, LSTM, and Kalman Filter.
  
 # Environment-dependent
- Lattice Radiant
- python 3.11
+ 	Lattice Radiant
+	python 3.11
 
 # Directory Structure Description
     |—— ReadMe.md          // help
     
-    |—— ESA_data           // Handwritten Chinese Character Dataset
+    |—— ESA_data           // Neural data for testing from Xu et al., Adv. Sci., 2025
     
         Dataset Overview
-        
-        This dataset is designed for neural signal decoding and behavioral trajectory prediction, and is suitable for training and evaluating models such as Wiener filters, Kalman filters, and LSTM networks.
         
         The data are stored in MATLAB 5.0 format and loaded as a dictionary , with the following main fields:
         
@@ -125,9 +121,8 @@ It includes FPGA implementations of Wiener, LSTM, and Kalman trajectory decoding
 # Version
 ###### v1.0.0: 
     1. 128-channel neural signal acquisition
-    2. spike cal
-    3. Wiener&LSTM&Kalman cal
-    4. channel RMS cal
+    2. spike detection
+    3. Wiener&LSTM&Kalman decoding modules
     
 
  

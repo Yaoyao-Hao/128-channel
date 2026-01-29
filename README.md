@@ -1,5 +1,6 @@
 # 128-channel
 A 128-channel fully implantable system with COTS components for intracortical neural sensing and decoding
+    
     |—— Electrode          // design files for silicon probe and flexible cable
     
     |—— ESA_data           // Neural data for testing from Xu et al., Adv. Sci., 2025

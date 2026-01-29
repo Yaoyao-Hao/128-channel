@@ -3,7 +3,7 @@ A 128-channel fully implantable system with COTS components for intracortical ne
     
     |—— Electrode          
     
-    // design files for silicon probe and flexible cable
+        // design files for silicon probe and flexible cable
     
     |—— FPGA decoding      
     
@@ -11,35 +11,21 @@ A 128-channel fully implantable system with COTS components for intracortical ne
     
         // along with testing neural data and Python implementation
         
-    |—— bined_spk — Neural Feature Matrix
+    |—— Firmware
+
+        // Code and Firmware for FPGA and MCU used in the 128-ch system
         
-            Shape: (96, 12600)
+    |—— GUI
+
+        // Code for the graphic user interface (GUI) running on PC, implemented with Qt and C++
+
+    |—— PCB
+
+        // Schematic, PCB layout, and BOM for the 128-ch system
         
-            Description: Binned spike features from 96 neural channels across 12,600 time windows.
-        
-            This serves as the main input feature matrix X.
-        
-    |   |—— trial_velocity — Target Output (Velocity Trajectories)
-        
-            Shape: (2, 12600)
-        
-            Description: Two-dimensional velocity signals (e.g., x- and y-direction hand movement velocities).
-        
-            This is the supervised target Y.
-        
-    |   |—— trial_mask — Valid Sample Mask
-        
-            Shape: (1, 12600)
-        
-            Description: Indicates whether each time point belongs to a valid trial segment (1 = valid, 0 = invalid/inter-trial interval).
-        
-            Used to filter out non-trial data during training and evaluation.
-        
-    |   |—— trial_breakNum — Trial Lengths
-        
-            Shape: (1, 90)
-        
-            Description: Number of time steps in each of the 90 trials.
-        
-            Used to segment continuous data into individual trials.
+        // Gerber files for production
+
+    |—— Packaging
+
+        // 3D structure files for the whole system and feedthrough
         

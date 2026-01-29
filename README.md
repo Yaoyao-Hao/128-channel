@@ -1,16 +1,17 @@
 # 128-channel
 A 128-channel fully implantable system with COTS components for intracortical neural sensing and decoding
     
-    |—— Electrode          // design files for silicon probe and flexible cable
+    |—— Electrode          
     
-    |—— ESA_data           // Neural data for testing from Xu et al., Adv. Sci., 2025
+    // design files for silicon probe and flexible cable
     
-        Dataset Overview
+    |—— FPGA decoding      
+    
+        // FPGA implementation of 3 decoding algorithms: Wiener Filter, Kalman Filter and LSTM
+    
+        // along with testing neural data and Python implementation
         
-        The data are stored in MATLAB 5.0 format and loaded as a dictionary , with the following main fields:
-        
-        Core Data Fields
-    |   |—— bined_spk — Neural Feature Matrix
+    |—— bined_spk — Neural Feature Matrix
         
             Shape: (96, 12600)
         
